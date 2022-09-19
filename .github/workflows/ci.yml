@@ -23,3 +23,6 @@ jobs:
 
       - name: Test
         run: go test ./prose -v
+
+      - name: run unit test
+        run: go test ./prose -v -coverprofile=coverage.xml -covermode=atomic
